@@ -1,0 +1,8 @@
+.title KiCad schematic
+Q1 Net-_Q1-Pad1_ Net-_C1-Pad1_ Net-_Q1-Pad3_ Q_NMOS_GDS
+D1 GND Net-_D1-Pad2_ LED
+R3 Net-_Q1-Pad3_ Net-_D1-Pad2_ 1.4
+R2 +3V3 Net-_C1-Pad1_ 1
+C1 Net-_C1-Pad1_ GND 12É 
+R1 Net-_Q1-Pad1_ +3V3 165
+.end

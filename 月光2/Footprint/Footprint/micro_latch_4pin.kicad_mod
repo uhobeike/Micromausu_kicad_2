@@ -1,0 +1,8 @@
+(module micro_latch_4pin (layer F.Cu) (tedit 5B68109C)
+  (fp_text reference REF** (at -13.45 1.25) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value micro_latch_4pin (at -13.45 0.25) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)
