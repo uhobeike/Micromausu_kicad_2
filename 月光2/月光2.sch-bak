@@ -248,9 +248,9 @@ Wire Wire Line
 	2250 1750 3100 1750
 Wire Wire Line
 	2250 1900 2400 1900
-Text GLabel 6000 3200 1    50   Input ~ 0
-MotorR_Reverce
 Text GLabel 6100 3200 1    50   Input ~ 0
+MotorR_Reverce
+Text GLabel 6000 3200 1    50   Input ~ 0
 MotorR_Foward
 Text GLabel 5050 4500 0    50   Input ~ 0
 MotorL_Reverce
