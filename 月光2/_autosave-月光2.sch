@@ -280,9 +280,9 @@ RLED_PWM
 Text GLabel 5800 5100 3    50   Input ~ 0
 sens_L
 Text GLabel 5700 5100 3    50   Input ~ 0
-sens_RR
-Text GLabel 5600 5100 3    50   Input ~ 0
 sens_R
+Text GLabel 5600 5100 3    50   Input ~ 0
+sens_RR
 Text GLabel 5500 5100 3    50   Input ~ 0
 sens_LL
 Text GLabel 6200 3200 1    50   Input ~ 0
