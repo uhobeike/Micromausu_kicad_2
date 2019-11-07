@@ -280,9 +280,9 @@ RLED_PWM
 Text GLabel 5800 5100 3    50   Input ~ 0
 sens_L
 Text GLabel 5700 5100 3    50   Input ~ 0
-sens_RR
-Text GLabel 5600 5100 3    50   Input ~ 0
 sens_R
+Text GLabel 5600 5100 3    50   Input ~ 0
+sens_RR
 Text GLabel 5500 5100 3    50   Input ~ 0
 sens_LL
 Text GLabel 6200 3200 1    50   Input ~ 0
@@ -1886,7 +1886,7 @@ U 1 1 5DE6FDEF
 P 4900 6700
 F 0 "U8" H 5078 6646 50  0000 L CNN
 F 1 "LED_FOTR" H 5078 6555 50  0000 L CNN
-F 2 "" H 4900 6700 50  0001 C CNN
+F 2 "micro:LED_FOTR_M" H 4900 6700 50  0001 C CNN
 F 3 "" H 4900 6700 50  0001 C CNN
 	1    4900 6700
 	1    0    0    -1  
@@ -1926,7 +1926,7 @@ U 1 1 5E01BA79
 P 3700 6700
 F 0 "U7" H 3878 6646 50  0000 L CNN
 F 1 "LED_FOTR" H 3878 6555 50  0000 L CNN
-F 2 "" H 3700 6700 50  0001 C CNN
+F 2 "micro:LED_FOTR_M" H 3700 6700 50  0001 C CNN
 F 3 "" H 3700 6700 50  0001 C CNN
 	1    3700 6700
 	1    0    0    -1  
