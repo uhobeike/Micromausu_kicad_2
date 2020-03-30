@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name 月光2-rescue)(type Legacy)(uri ${KIPRJMOD}/月光2-rescue.lib)(options "")(descr ""))
+  (lib (name gekko-rescue)(type Legacy)(uri ${KIPRJMOD}/gekko-rescue.lib)(options "")(descr ""))
 )

@@ -28,7 +28,7 @@ NoConn ~ 8800 5700
 Wire Wire Line
 	8800 5600 8500 5600
 $Comp
-L power:GND #PWR033
+L gekko-rescue:GND-power #PWR033
 U 1 1 5D8F46CB
 P 8500 5600
 F 0 "#PWR033" H 8500 5350 50  0001 C CNN
@@ -41,7 +41,7 @@ $EndComp
 NoConn ~ 8800 5500
 Connection ~ 8500 5600
 $Comp
-L power:+3.3V #PWR037
+L gekko-rescue:+3.3V-power #PWR037
 U 1 1 5D8F47F6
 P 9600 4950
 F 0 "#PWR037" H 9600 4800 50  0001 C CNN
@@ -54,7 +54,7 @@ $EndComp
 Wire Wire Line
 	9600 4950 9600 5050
 $Comp
-L Device:C C16
+L gekko-rescue:C-Device C16
 U 1 1 5D8F48FF
 P 10200 5300
 F 0 "C16" V 9948 5300 50  0000 C CNN
@@ -73,7 +73,7 @@ Wire Wire Line
 Wire Wire Line
 	10750 5600 10750 5700
 $Comp
-L Device:C C17
+L gekko-rescue:C-Device C17
 U 1 1 5D8F4B43
 P 10200 5700
 F 0 "C17" V 9948 5700 50  0000 C CNN
@@ -93,7 +93,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 5900 10000 5900
 $Comp
-L Device:C C18
+L gekko-rescue:C-Device C18
 U 1 1 5D8F4E74
 P 10200 5900
 F 0 "C18" V 10452 5900 50  0000 C CNN
@@ -109,7 +109,7 @@ Connection ~ 10750 5900
 Wire Wire Line
 	10750 5900 10750 6300
 $Comp
-L power:GND #PWR042
+L gekko-rescue:GND-power #PWR042
 U 1 1 5D8F62D4
 P 10750 6300
 F 0 "#PWR042" H 10750 6050 50  0001 C CNN
@@ -150,7 +150,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 2350 1800 2550
 $Comp
-L power:GND #PWR09
+L gekko-rescue:GND-power #PWR09
 U 1 1 5D90758D
 P 1800 2550
 F 0 "#PWR09" H 1800 2300 50  0001 C CNN
@@ -168,7 +168,7 @@ MotorL_Reverce
 Text GLabel 1150 2050 0    50   Input ~ 0
 MotorL_Foward
 $Comp
-L power:+3.3V #PWR06
+L gekko-rescue:+3.3V-power #PWR06
 U 1 1 5D9078B8
 P 1600 1150
 F 0 "#PWR06" H 1600 1000 50  0001 C CNN
@@ -179,7 +179,7 @@ F 3 "" H 1600 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L gekko-rescue:C-Device C3
 U 1 1 5D907BB0
 P 1450 1250
 F 0 "C3" V 1198 1250 50  0000 C CNN
@@ -193,7 +193,7 @@ Connection ~ 1600 1250
 Wire Wire Line
 	1600 1250 1600 1400
 $Comp
-L power:GND #PWR05
+L gekko-rescue:GND-power #PWR05
 U 1 1 5D907C17
 P 1300 1250
 F 0 "#PWR05" H 1300 1000 50  0001 C CNN
@@ -204,7 +204,7 @@ F 3 "" H 1300 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+BATT #PWR08
+L gekko-rescue:+BATT-power #PWR08
 U 1 1 5D907C78
 P 1800 1150
 F 0 "#PWR08" H 1800 1000 50  0001 C CNN
@@ -217,11 +217,11 @@ $EndComp
 Wire Wire Line
 	1800 1150 1800 1250
 $Comp
-L Device:C C4
+L gekko-rescue:C-Device C4
 U 1 1 5D908003
 P 1950 1250
 F 0 "C4" V 1698 1250 50  0000 C CNN
-F 1 "10μ" V 1789 1250 50  0000 C CNN
+F 1 "0.1μ" V 1789 1250 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 1988 1100 50  0001 C CNN
 F 3 "~" H 1950 1250 50  0001 C CNN
 	1    1950 1250
@@ -231,7 +231,7 @@ Connection ~ 1800 1250
 Wire Wire Line
 	1800 1250 1800 1400
 $Comp
-L power:GND #PWR010
+L gekko-rescue:GND-power #PWR010
 U 1 1 5D908078
 P 2100 1250
 F 0 "#PWR010" H 2100 1000 50  0001 C CNN
@@ -264,7 +264,7 @@ sens_L
 Text GLabel 1250 7100 0    50   Input ~ 0
 sens_LL
 $Comp
-L power:+3.3V #PWR014
+L gekko-rescue:+3.3V-power #PWR014
 U 1 1 5D9D06D4
 P 4750 5400
 F 0 "#PWR014" H 4750 5250 50  0001 C CNN
@@ -293,7 +293,7 @@ encL_1
 Text GLabel 6500 3200 1    50   Input ~ 0
 encL_2
 $Comp
-L Connector_Generic:Conn_01x03 J4
+L gekko-rescue:Conn_01x03-Connector_Generic J4
 U 1 1 5DA46E62
 P 7050 1250
 F 0 "J4" H 7000 1600 50  0000 L CNN
@@ -308,7 +308,7 @@ UART_RX
 Text GLabel 6850 1250 0    50   Input ~ 0
 UART_TX
 $Comp
-L Connector_Generic:Conn_01x05 J3
+L gekko-rescue:Conn_01x05-Connector_Generic J3
 U 1 1 5DA47855
 P 6200 1350
 F 0 "J3" H 6280 1392 50  0000 L CNN
@@ -329,7 +329,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 1350 6000 1350
 $Comp
-L power:GND #PWR013
+L gekko-rescue:GND-power #PWR013
 U 1 1 5DA4B76C
 P 5500 1750
 F 0 "#PWR013" H 5500 1500 50  0001 C CNN
@@ -341,7 +341,7 @@ F 3 "" H 5500 1750 50  0001 C CNN
 $EndComp
 Connection ~ 5500 1750
 $Comp
-L power:+3.3V #PWR012
+L gekko-rescue:+3.3V-power #PWR012
 U 1 1 5DA4F5B6
 P 5500 1150
 F 0 "#PWR012" H 5500 1000 50  0001 C CNN
@@ -352,7 +352,7 @@ F 3 "" H 5500 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L gekko-rescue:GND-power #PWR02
 U 1 1 5DACA972
 P 750 5100
 F 0 "#PWR02" H 750 4850 50  0001 C CNN
@@ -369,7 +369,7 @@ encR_2
 Wire Wire Line
 	3500 5100 3500 4100
 $Comp
-L Device:C C5
+L gekko-rescue:C-Device C5
 U 1 1 5DAFD036
 P 3500 3950
 F 0 "C5" H 3400 4050 50  0000 L CNN
@@ -383,7 +383,7 @@ Wire Wire Line
 	750  5100 750  4100
 Connection ~ 750  5100
 $Comp
-L Device:C C1
+L gekko-rescue:C-Device C1
 U 1 1 5DB07995
 P 750 3950
 F 0 "C1" H 550 4150 50  0000 L CNN
@@ -394,7 +394,7 @@ F 3 "~" H 750 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR01
+L gekko-rescue:+3.3V-power #PWR01
 U 1 1 5DB1D27E
 P 750 3150
 F 0 "#PWR01" H 750 3000 50  0001 C CNN
@@ -406,7 +406,7 @@ F 3 "" H 750 3150 50  0001 C CNN
 $EndComp
 Connection ~ 750  3150
 $Comp
-L power:+3.3V #PWR03
+L gekko-rescue:+3.3V-power #PWR03
 U 1 1 5DB96E69
 P 4450 1100
 F 0 "#PWR03" H 4450 950 50  0001 C CNN
@@ -428,7 +428,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 1400 4900 1500
 $Comp
-L Device:C C2
+L gekko-rescue:C-Device C2
 U 1 1 5DBBF724
 P 4900 1650
 F 0 "C2" H 5015 1696 50  0000 L CNN
@@ -445,7 +445,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 1900 4450 2050
 $Comp
-L power:GND #PWR04
+L gekko-rescue:GND-power #PWR04
 U 1 1 5DBCE778
 P 4450 2050
 F 0 "#PWR04" H 4450 1800 50  0001 C CNN
@@ -456,7 +456,7 @@ F 3 "" H 4450 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L gekko-rescue:R-Device R1
 U 1 1 5DBD5F25
 P 4450 1250
 F 0 "R1" H 4520 1296 50  0000 L CNN
@@ -491,7 +491,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 2700 5000 2700
 $Comp
-L power:+3.3V #PWR018
+L gekko-rescue:+3.3V-power #PWR018
 U 1 1 5DC3A7E7
 P 4400 2700
 F 0 "#PWR018" H 4400 2550 50  0001 C CNN
@@ -502,7 +502,7 @@ F 3 "" H 4400 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L gekko-rescue:C-Device C7
 U 1 1 5DC3A952
 P 4400 2850
 F 0 "C7" H 4515 2896 50  0000 L CNN
@@ -513,7 +513,7 @@ F 3 "~" H 4400 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C8
+L gekko-rescue:C-Device C8
 U 1 1 5DC3AA4F
 P 4750 2850
 F 0 "C8" H 4865 2896 50  0000 L CNN
@@ -528,7 +528,7 @@ Connection ~ 4750 2700
 Wire Wire Line
 	4750 2700 4400 2700
 $Comp
-L power:GND #PWR019
+L gekko-rescue:GND-power #PWR019
 U 1 1 5DC52CEE
 P 4400 3000
 F 0 "#PWR019" H 4400 2750 50  0001 C CNN
@@ -549,7 +549,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 3200 5900 2700
 $Comp
-L Device:C C12
+L gekko-rescue:C-Device C12
 U 1 1 5DCB69DD
 P 7650 3650
 F 0 "C12" H 7765 3696 50  0000 L CNN
@@ -560,7 +560,7 @@ F 3 "~" H 7650 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR029
+L gekko-rescue:GND-power #PWR029
 U 1 1 5DCBF713
 P 7650 3800
 F 0 "#PWR029" H 7650 3550 50  0001 C CNN
@@ -571,7 +571,7 @@ F 3 "" H 7650 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR028
+L gekko-rescue:+3.3V-power #PWR028
 U 1 1 5DCBF7D3
 P 7650 3500
 F 0 "#PWR028" H 7650 3350 50  0001 C CNN
@@ -586,7 +586,7 @@ Wire Wire Line
 Wire Wire Line
 	6600 5100 6600 5200
 $Comp
-L Device:C C11
+L gekko-rescue:C-Device C11
 U 1 1 5DCDAB48
 P 6650 5350
 F 0 "C11" H 6765 5396 50  0000 L CNN
@@ -597,7 +597,7 @@ F 3 "~" H 6650 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C10
+L gekko-rescue:C-Device C10
 U 1 1 5DCDABFE
 P 6450 5350
 F 0 "C10" H 6300 5250 50  0000 L CNN
@@ -623,7 +623,7 @@ Connection ~ 6550 5500
 Wire Wire Line
 	6550 5500 6450 5500
 $Comp
-L power:GND #PWR025
+L gekko-rescue:GND-power #PWR025
 U 1 1 5DD24320
 P 6550 5500
 F 0 "#PWR025" H 6550 5250 50  0001 C CNN
@@ -634,7 +634,7 @@ F 3 "" H 6550 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L gekko-rescue:GND-power #PWR016
 U 1 1 5DD2E50E
 P 3950 4100
 F 0 "#PWR016" H 3950 3850 50  0001 C CNN
@@ -647,7 +647,7 @@ $EndComp
 Wire Wire Line
 	4550 4100 4550 4300
 $Comp
-L Device:C C6
+L gekko-rescue:C-Device C6
 U 1 1 5DD41FF8
 P 4300 4250
 F 0 "C6" H 4415 4296 50  0000 L CNN
@@ -665,7 +665,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 4400 3700 4100
 $Comp
-L power:+3.3V #PWR015
+L gekko-rescue:+3.3V-power #PWR015
 U 1 1 5DD5628B
 P 3700 4100
 F 0 "#PWR015" H 3700 3950 50  0001 C CNN
@@ -676,7 +676,7 @@ F 3 "" H 3700 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L L1
+L gekko-rescue:L-Device L1
 U 1 1 5DD56AFD
 P 4000 4400
 F 0 "L1" V 4100 4250 50  0000 C CNN
@@ -714,7 +714,7 @@ UART_TX
 Text GLabel 7050 3900 2    50   Input ~ 0
 LED_1
 $Comp
-L Device:R R3
+L gekko-rescue:R-Device R3
 U 1 1 5DFC5784
 P 5950 7500
 F 0 "R3" V 5743 7500 50  0000 C CNN
@@ -725,7 +725,7 @@ F 3 "~" H 5950 7500 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R R2
+L gekko-rescue:R-Device R2
 U 1 1 5DFD8A4F
 P 6300 7250
 F 0 "R2" V 6400 7250 50  0000 C CNN
@@ -738,7 +738,7 @@ $EndComp
 Text GLabel 6450 7250 2    50   Input ~ 0
 RLED_PWM
 $Comp
-L power:+BATT #PWR026
+L gekko-rescue:+BATT-power #PWR026
 U 1 1 5E075CD7
 P 7750 1000
 F 0 "#PWR026" H 7750 850 50  0001 C CNN
@@ -752,7 +752,7 @@ NoConn ~ 5050 3700
 NoConn ~ 5050 3800
 NoConn ~ 5050 3900
 $Comp
-L Connector_Generic:Conn_01x02 J6
+L gekko-rescue:Conn_01x02-Connector_Generic J6
 U 1 1 5E1ECE0E
 P 7400 1450
 F 0 "J6" H 7320 1125 50  0000 C CNN
@@ -784,7 +784,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 2050 2250 2400
 $Comp
-L Device:Q_NMOS_GDS Q5
+L gekko-rescue:Q_NMOS_GDS-Device Q5
 U 1 1 5E4C63DC
 P 5850 7250
 F 0 "Q5" H 6055 7296 50  0000 L CNN
@@ -809,7 +809,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 1450 7750 2050
 $Comp
-L power:GND #PWR027
+L gekko-rescue:GND-power #PWR027
 U 1 1 5E6B86D3
 P 7750 2050
 F 0 "#PWR027" H 7750 1800 50  0001 C CNN
@@ -823,7 +823,7 @@ Connection ~ 7750 2050
 Wire Wire Line
 	7750 1100 7750 1350
 $Comp
-L Device:CP C13
+L gekko-rescue:CP-Device C13
 U 1 1 5E705C44
 P 9300 1550
 F 0 "C13" H 9350 1650 50  0000 L CNN
@@ -838,7 +838,7 @@ Wire Wire Line
 Wire Wire Line
 	9300 2050 9300 1700
 $Comp
-L Device:R R16
+L gekko-rescue:R-Device R16
 U 1 1 5E72594D
 P 8400 1350
 F 0 "R16" H 8470 1396 50  0000 L CNN
@@ -849,7 +849,7 @@ F 3 "~" H 8400 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D6
+L gekko-rescue:LED-Device D6
 U 1 1 5E725A03
 P 8400 1800
 F 0 "D6" V 8438 1683 50  0000 R CNN
@@ -866,7 +866,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 1950 8400 2050
 $Comp
-L power:PWR_FLAG #FLG01
+L gekko-rescue:PWR_FLAG-power #FLG01
 U 1 1 5E7569C6
 P 9150 1100
 F 0 "#FLG01" H 9150 1175 50  0001 C CNN
@@ -878,7 +878,7 @@ F 3 "~" H 9150 1100 50  0001 C CNN
 $EndComp
 Connection ~ 9150 1100
 $Comp
-L mausu:DRV8835 U1
+L gekko-rescue:DRV8835-mausu U1
 U 1 1 5D9ABDD5
 P 1700 1450
 F 0 "U1" H 1700 1678 50  0000 C CNN
@@ -889,7 +889,7 @@ F 3 "" H 1700 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mausu:STM32F413CH6 U2
+L gekko-rescue:STM32F413CH6-mausu U2
 U 1 1 5D9CD9AA
 P 6050 3200
 F 0 "U2" H 6000 2550 50  0000 L CNN
@@ -900,7 +900,7 @@ F 3 "" H 6050 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mausu:ICM20648 U5
+L gekko-rescue:ICM20648-mausu U5
 U 1 1 5D9E071E
 P 9350 5200
 F 0 "U5" H 9300 4000 50  0000 L CNN
@@ -911,7 +911,7 @@ F 3 "" H 9350 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mausu:LP5907_DBV U4
+L gekko-rescue:LP5907_DBV-mausu U4
 U 1 1 5D9E18FE
 P 9950 1000
 F 0 "U4" H 9950 1125 50  0000 C CNN
@@ -927,7 +927,7 @@ Wire Wire Line
 	9650 1200 9650 2050
 Connection ~ 9650 2050
 $Comp
-L power:+3.3V #PWR040
+L gekko-rescue:+3.3V-power #PWR040
 U 1 1 5DA15303
 P 10700 1100
 F 0 "#PWR040" H 10700 950 50  0001 C CNN
@@ -939,7 +939,7 @@ F 3 "" H 10700 1100 50  0001 C CNN
 $EndComp
 NoConn ~ 10200 1300
 $Comp
-L Device:CP C15
+L gekko-rescue:CP-Device C15
 U 1 1 5DA4AB68
 P 10450 1550
 F 0 "C15" H 10568 1596 50  0000 L CNN
@@ -954,7 +954,7 @@ Wire Wire Line
 Wire Wire Line
 	10450 1700 10450 2050
 $Comp
-L Device:Crystal_GND23 Y1
+L gekko-rescue:Crystal_GND23-Device Y1
 U 1 1 5DA8662B
 P 10200 4500
 F 0 "Y1" H 10391 4546 50  0000 L CNN
@@ -965,7 +965,7 @@ F 3 "~" H 10200 4500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C14
+L gekko-rescue:C-Device C14
 U 1 1 5DB9B459
 P 9300 4550
 F 0 "C14" H 9415 4596 50  0000 L CNN
@@ -983,7 +983,7 @@ NoConn ~ 10350 4500
 Text GLabel 10350 4900 2    50   Input ~ 0
 CROCK_IN
 $Comp
-L power:+3.3V #PWR035
+L gekko-rescue:+3.3V-power #PWR035
 U 1 1 5DBFAD9F
 P 9300 4250
 F 0 "#PWR035" H 9300 4100 50  0001 C CNN
@@ -994,7 +994,7 @@ F 3 "" H 9300 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR036
+L gekko-rescue:GND-power #PWR036
 U 1 1 5DBFAE4A
 P 9300 4700
 F 0 "#PWR036" H 9300 4450 50  0001 C CNN
@@ -1006,7 +1006,7 @@ F 3 "" H 9300 4700 50  0001 C CNN
 $EndComp
 Connection ~ 10700 1100
 $Comp
-L Device:R R20
+L gekko-rescue:R-Device R20
 U 1 1 5DDD1228
 P 10700 1350
 F 0 "R20" H 10770 1396 50  0000 L CNN
@@ -1017,7 +1017,7 @@ F 3 "~" H 10700 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D9
+L gekko-rescue:LED-Device D9
 U 1 1 5DDD122F
 P 10700 1800
 F 0 "D9" V 10738 1683 50  0000 R CNN
@@ -1074,7 +1074,7 @@ Wire Wire Line
 	10750 5300 10750 5600
 Connection ~ 10750 5600
 $Comp
-L Device:C C19
+L gekko-rescue:C-Device C19
 U 1 1 5DB0B4EF
 P 4750 6000
 F 0 "C19" H 4865 6046 50  0000 L CNN
@@ -1085,7 +1085,7 @@ F 3 "~" H 4750 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C20
+L gekko-rescue:C-Device C20
 U 1 1 5DB0B61A
 P 1200 6000
 F 0 "C20" H 1315 6046 50  0000 L CNN
@@ -1096,7 +1096,7 @@ F 3 "~" H 1200 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
+L gekko-rescue:R-Device R5
 U 1 1 5DCE16E1
 P 4950 6500
 F 0 "R5" H 5020 6546 50  0000 L CNN
@@ -1107,7 +1107,7 @@ F 3 "~" H 4950 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R21
+L gekko-rescue:R-Device R21
 U 1 1 5DCE1825
 P 1400 6500
 F 0 "R21" H 1470 6546 50  0000 L CNN
@@ -1118,7 +1118,7 @@ F 3 "~" H 1400 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R22
+L gekko-rescue:R-Device R22
 U 1 1 5DCF5763
 P 3750 6500
 F 0 "R22" H 3820 6546 50  0000 L CNN
@@ -1129,7 +1129,7 @@ F 3 "~" H 3750 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R23
+L gekko-rescue:R-Device R23
 U 1 1 5DD096B4
 P 2650 6500
 F 0 "R23" H 2720 6546 50  0000 L CNN
@@ -1140,7 +1140,7 @@ F 3 "~" H 2650 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C21
+L gekko-rescue:C-Device C21
 U 1 1 5DEB0DA0
 P 3550 6000
 F 0 "C21" H 3665 6046 50  0000 L CNN
@@ -1151,7 +1151,7 @@ F 3 "~" H 3550 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C22
+L gekko-rescue:C-Device C22
 U 1 1 5DEC6001
 P 2450 6000
 F 0 "C22" H 2565 6046 50  0000 L CNN
@@ -1198,7 +1198,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 5800 2550 6250
 $Comp
-L power:GND #PWR017
+L gekko-rescue:GND-power #PWR017
 U 1 1 5E57D016
 P 4750 6150
 F 0 "#PWR017" H 4750 5900 50  0001 C CNN
@@ -1209,7 +1209,7 @@ F 3 "" H 4750 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR039
+L gekko-rescue:GND-power #PWR039
 U 1 1 5E57D13E
 P 1200 6150
 F 0 "#PWR039" H 1200 5900 50  0001 C CNN
@@ -1220,7 +1220,7 @@ F 3 "" H 1200 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR043
+L gekko-rescue:GND-power #PWR043
 U 1 1 5E598063
 P 3550 6150
 F 0 "#PWR043" H 3550 5900 50  0001 C CNN
@@ -1231,7 +1231,7 @@ F 3 "" H 3550 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR044
+L gekko-rescue:GND-power #PWR044
 U 1 1 5E5B2F88
 P 2450 6150
 F 0 "#PWR044" H 2450 5900 50  0001 C CNN
@@ -1242,7 +1242,7 @@ F 3 "" H 2450 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C25
+L gekko-rescue:C-Device C25
 U 1 1 5E79CF40
 P 9550 1550
 F 0 "C25" H 9665 1596 50  0000 L CNN
@@ -1263,7 +1263,7 @@ Connection ~ 10450 2050
 Wire Wire Line
 	9650 2050 10250 2050
 $Comp
-L Device:C C26
+L gekko-rescue:C-Device C26
 U 1 1 5E83521E
 P 10250 1550
 F 0 "C26" H 10100 1650 50  0000 L CNN
@@ -1290,7 +1290,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 7500 5750 7500
 $Comp
-L power:GND #PWR047
+L gekko-rescue:GND-power #PWR047
 U 1 1 5F10D62B
 P 5750 7500
 F 0 "#PWR047" H 5750 7250 50  0001 C CNN
@@ -1304,7 +1304,7 @@ Connection ~ 5750 7500
 NoConn ~ 6200 5100
 NoConn ~ 7050 4300
 $Comp
-L power:PWR_FLAG #FLG02
+L gekko-rescue:PWR_FLAG-power #FLG02
 U 1 1 5DBCB355
 P 8100 2050
 F 0 "#FLG02" H 8100 2125 50  0001 C CNN
@@ -1321,7 +1321,7 @@ Text GLabel 1150 1750 0    50   Input ~ 0
 MotorR_Foward
 NoConn ~ 5050 4100
 $Comp
-L Device:R R4
+L gekko-rescue:R-Device R4
 U 1 1 5DDA9B7E
 P 4850 5650
 F 0 "R4" V 4643 5650 50  0000 C CNN
@@ -1333,7 +1333,7 @@ F 3 "~" H 4850 5650 50  0001 C CNN
 $EndComp
 Connection ~ 4850 5800
 $Comp
-L Device:R R26
+L gekko-rescue:R-Device R26
 U 1 1 5DE078AA
 P 1300 5650
 F 0 "R26" V 1093 5650 50  0000 C CNN
@@ -1344,7 +1344,7 @@ F 3 "~" H 1300 5650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R27
+L gekko-rescue:R-Device R27
 U 1 1 5DE26CE3
 P 3650 5650
 F 0 "R27" V 3443 5650 50  0000 C CNN
@@ -1355,7 +1355,7 @@ F 3 "~" H 3650 5650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R28
+L gekko-rescue:R-Device R28
 U 1 1 5DE6562A
 P 2550 5650
 F 0 "R28" V 2343 5650 50  0000 C CNN
@@ -1403,7 +1403,7 @@ NoConn ~ 6300 5100
 NoConn ~ 5700 3200
 NoConn ~ 5800 3200
 $Comp
-L Device:R R6
+L gekko-rescue:R-Device R6
 U 1 1 5DC0E392
 P 5900 2550
 F 0 "R6" H 6000 2700 50  0000 L CNN
@@ -1418,7 +1418,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 2350 5750 2350
 $Comp
-L power:GND #PWR020
+L gekko-rescue:GND-power #PWR020
 U 1 1 5DC3B63F
 P 5750 2350
 F 0 "#PWR020" H 5750 2100 50  0001 C CNN
@@ -1429,7 +1429,7 @@ F 3 "" H 5750 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG03
+L gekko-rescue:PWR_FLAG-power #FLG03
 U 1 1 5DC3C86B
 P 4750 5450
 F 0 "#FLG03" H 4750 5525 50  0001 C CNN
@@ -1443,7 +1443,7 @@ Connection ~ 4750 5450
 Wire Wire Line
 	4750 5450 4750 5500
 $Comp
-L Device:R R7
+L gekko-rescue:R-Device R7
 U 1 1 5DCAE579
 P 4800 7350
 F 0 "R7" H 4870 7396 50  0000 L CNN
@@ -1454,7 +1454,7 @@ F 3 "~" H 4800 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R8
+L gekko-rescue:R-Device R8
 U 1 1 5DCC4105
 P 2500 7350
 F 0 "R8" H 2570 7396 50  0000 L CNN
@@ -1465,7 +1465,7 @@ F 3 "~" H 2500 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R24
+L gekko-rescue:R-Device R24
 U 1 1 5DCD9C94
 P 3600 7350
 F 0 "R24" H 3670 7396 50  0000 L CNN
@@ -1476,7 +1476,7 @@ F 3 "~" H 3600 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R25
+L gekko-rescue:R-Device R25
 U 1 1 5DD73098
 P 1250 7350
 F 0 "R25" H 1320 7396 50  0000 L CNN
@@ -1487,7 +1487,7 @@ F 3 "~" H 1250 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x12 J1
+L gekko-rescue:Conn_01x12-Connector_Generic J1
 U 1 1 5DB6C0AB
 P 2000 4300
 F 0 "J1" H 2050 3700 50  0000 L CNN
@@ -1498,7 +1498,7 @@ F 3 "~" H 2000 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x12 J2
+L gekko-rescue:Conn_01x12-Connector_Generic J2
 U 1 1 5DC1B1BB
 P 3150 4300
 F 0 "J2" H 3250 3700 50  0000 L CNN
@@ -1635,7 +1635,7 @@ LED_2
 Text Notes 8650 2500 0    197  ~ 0
 LED_DEBUG\n
 $Comp
-L Device:R R18
+L gekko-rescue:R-Device R18
 U 1 1 5E6F10F0
 P 9650 2950
 F 0 "R18" V 9443 2950 50  0000 C CNN
@@ -1646,7 +1646,7 @@ F 3 "~" H 9650 2950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D10
+L gekko-rescue:LED-Device D10
 U 1 1 5E6F10F7
 P 9650 3250
 F 0 "D10" V 9688 3133 50  0000 R CNN
@@ -1657,7 +1657,7 @@ F 3 "~" H 9650 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR038
+L gekko-rescue:+3.3V-power #PWR038
 U 1 1 5E6F111D
 P 9650 2800
 F 0 "#PWR038" H 9650 2650 50  0001 C CNN
@@ -1670,7 +1670,7 @@ $EndComp
 Text GLabel 9650 3400 3    50   Input ~ 0
 LED_3
 $Comp
-L power:+3.3V #PWR030
+L gekko-rescue:+3.3V-power #PWR030
 U 1 1 5E707A27
 P 9000 2800
 F 0 "#PWR030" H 9000 2650 50  0001 C CNN
@@ -1681,7 +1681,7 @@ F 3 "" H 9000 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R10
+L gekko-rescue:R-Device R10
 U 1 1 5DAAB01F
 P 9000 2950
 F 0 "R10" H 9070 2996 50  0000 L CNN
@@ -1692,7 +1692,7 @@ F 3 "~" H 9000 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D5
+L gekko-rescue:LED-Device D5
 U 1 1 5E707A01
 P 9000 3250
 F 0 "D5" V 9038 3133 50  0000 R CNN
@@ -1707,7 +1707,7 @@ LED_2
 Text GLabel 8400 3400 3    50   Input ~ 0
 LED_1
 $Comp
-L Device:LED D7
+L gekko-rescue:LED-Device D7
 U 1 1 5DFABA2F
 P 8400 3250
 F 0 "D7" V 8438 3133 50  0000 R CNN
@@ -1718,7 +1718,7 @@ F 3 "~" H 8400 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR031
+L gekko-rescue:+3.3V-power #PWR031
 U 1 1 5E47669C
 P 8400 2800
 F 0 "#PWR031" H 8400 2650 50  0001 C CNN
@@ -1729,7 +1729,7 @@ F 3 "" H 8400 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R14
+L gekko-rescue:R-Device R14
 U 1 1 5DF1B523
 P 8400 2950
 F 0 "R14" V 8193 2950 50  0000 C CNN
@@ -1751,7 +1751,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 1100 8700 1400
 $Comp
-L Device:D D8
+L gekko-rescue:D-Device D8
 U 1 1 5E767473
 P 8700 1550
 F 0 "D8" V 8654 1629 50  0000 L CNN
@@ -1774,7 +1774,7 @@ Wire Wire Line
 	8700 2050 9300 2050
 Connection ~ 8700 2050
 $Comp
-L Device:R_Pack04 RN1
+L gekko-rescue:R_Pack04-Device RN1
 U 1 1 5DCEBF57
 P 1650 3450
 F 0 "RN1" H 1838 3496 50  0000 L CNN
@@ -1785,7 +1785,7 @@ F 3 "~" H 1650 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Pack04 RN2
+L gekko-rescue:R_Pack04-Device RN2
 U 1 1 5DCEEB11
 P 8050 5550
 F 0 "RN2" H 8238 5596 50  0000 L CNN
@@ -1880,7 +1880,7 @@ Wire Wire Line
 	9650 4700 9300 4700
 Connection ~ 9300 4700
 $Comp
-L mausu:LED_FOTR U8
+L gekko-rescue:LED_FOTR-mausu U8
 U 1 1 5DE6FDEF
 P 4900 6700
 F 0 "U8" H 5078 6646 50  0000 L CNN
@@ -1898,7 +1898,7 @@ Wire Wire Line
 	4550 5500 4750 5500
 Connection ~ 4750 5500
 $Comp
-L mausu:LED_FOTR U3
+L gekko-rescue:LED_FOTR-mausu U3
 U 1 1 5DFD75ED
 P 1350 6700
 F 0 "U3" H 1528 6646 50  0000 L CNN
@@ -1909,7 +1909,7 @@ F 3 "" H 1350 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mausu:LED_FOTR U6
+L gekko-rescue:LED_FOTR-mausu U6
 U 1 1 5E005BEF
 P 2600 6700
 F 0 "U6" H 2778 6646 50  0000 L CNN
@@ -1920,7 +1920,7 @@ F 3 "" H 2600 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mausu:LED_FOTR U7
+L gekko-rescue:LED_FOTR-mausu U7
 U 1 1 5E01BA79
 P 3700 6700
 F 0 "U7" H 3878 6646 50  0000 L CNN
@@ -1939,7 +1939,7 @@ Connection ~ 3600 7500
 Wire Wire Line
 	3600 7500 2500 7500
 $Comp
-L power:GND #PWR07
+L gekko-rescue:GND-power #PWR07
 U 1 1 5E07CD27
 P 1250 7500
 F 0 "#PWR07" H 1250 7250 50  0001 C CNN
