@@ -1,3 +1,7 @@
-Circuit: (export (version D)
+Questionable use of curly braces in "last_client={kicad}"
+    Error: undefined symbol in: "[kicad]"
+Questionable use of curly braces in "netiext={net}"
+    Error: undefined symbol in: "[net]"
+Circuit: update=22/05/2015 07:44:53
 
-Fatal Error: Unknown SPICE device type "(" in "(design"
+Fatal Error: Multiple instances of "Version=1"
