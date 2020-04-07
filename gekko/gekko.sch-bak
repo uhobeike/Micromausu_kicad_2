@@ -1644,11 +1644,11 @@ Text GLabel 5050 4100 0    50   Input ~ 0
 DEBUG_LED2
 Text GLabel 6000 5100 3    50   Input ~ 0
 R_LED_PWM
-Text GLabel 6100 5100 3    50   Input ~ 0
+Text GLabel 6300 5100 3    50   Input ~ 0
 DEBUG_LED4
 Text GLabel 6200 5100 3    50   Input ~ 0
 DEBUG_LED5
-Text GLabel 6300 5100 3    50   Input ~ 0
+Text GLabel 6100 5100 3    50   Input ~ 0
 DEBUG_LED6
 Text GLabel 5050 3900 0    50   Input ~ 0
 DEBUG_LED1
