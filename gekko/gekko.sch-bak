@@ -663,17 +663,6 @@ $EndComp
 Wire Wire Line
 	7700 1350 7850 1350
 Wire Wire Line
-	7850 5050 7950 5050
-Connection ~ 7950 5050
-Wire Wire Line
-	7950 5050 8050 5050
-Connection ~ 8050 5050
-Wire Wire Line
-	8050 5050 8150 5050
-Connection ~ 8150 5050
-Wire Wire Line
-	8150 5050 9600 5050
-Wire Wire Line
 	2400 1900 2400 2250
 Wire Wire Line
 	2250 2050 2250 2400
@@ -1260,14 +1249,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 2550 1600 2550
 Connection ~ 1600 2550
-Wire Wire Line
-	7850 5050 7850 5350
-Wire Wire Line
-	7950 5050 7950 5350
-Wire Wire Line
-	8050 5050 8050 5350
-Wire Wire Line
-	8150 5050 8150 5350
 Connection ~ 1300 5800
 Connection ~ 3650 5800
 Connection ~ 2550 5800
@@ -1359,13 +1340,13 @@ F 3 "~" H 1250 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2450 1600 2    50   Input ~ 0
-MotorR_Foward
+MotorR_Foward_Out
 Text GLabel 2450 1750 2    50   Input ~ 0
-MotorR_Reverce
+MotorR_Reverce_Out
 Text GLabel 2450 2250 2    50   Input ~ 0
-MotorL_Foward
+MotorL_Foward_Out
 Text GLabel 2450 2400 2    50   Input ~ 0
-MotorL_Reverce
+MotorL_Reverce_Out
 Wire Wire Line
 	9300 1100 9450 1100
 Connection ~ 9450 1100
@@ -1498,45 +1479,11 @@ Wire Wire Line
 	8000 1100 8000 1400
 Wire Wire Line
 	8000 1700 8000 2050
-$Comp
-L gekko-rescue:R_Pack04-Device RN2
-U 1 1 5DCEEB11
-P 8050 5550
-F 0 "RN2" H 8238 5596 50  0000 L CNN
-F 1 "R_Pack04_10k" H 8238 5505 50  0000 L CNN
-F 2 "micro:R10k×4" V 8325 5550 50  0001 C CNN
-F 3 "~" H 8050 5550 50  0001 C CNN
-	1    8050 5550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7600 5800 7850 5800
-Wire Wire Line
-	7600 5900 7950 5900
-Wire Wire Line
-	7600 6000 8050 6000
-Wire Wire Line
-	7600 6350 8150 6350
-Wire Wire Line
-	7850 5750 7850 5800
 Connection ~ 7850 5800
 Wire Wire Line
 	7850 5800 8800 5800
-Wire Wire Line
-	7950 5750 7950 5900
-Connection ~ 7950 5900
-Wire Wire Line
-	7950 5900 8800 5900
-Wire Wire Line
-	8050 5750 8050 6000
-Connection ~ 8050 6000
-Wire Wire Line
-	8050 6000 8800 6000
-Wire Wire Line
-	8150 5750 8150 6350
-Connection ~ 8150 6350
-Wire Wire Line
-	8150 6350 9950 6350
 Wire Wire Line
 	9300 4250 10050 4250
 Wire Wire Line
@@ -2167,4 +2114,128 @@ F 3 "" H 6750 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6750 1500
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 5E8A933C
+P 1550 2900
+F 0 "J10" H 1630 2892 50  0000 L CNN
+F 1 "Conn_01x02" H 1630 2801 50  0000 L CNN
+F 2 "micro:motor_pad" H 1550 2900 50  0001 C CNN
+F 3 "~" H 1550 2900 50  0001 C CNN
+	1    1550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 5E8A9ADA
+P 1550 3200
+F 0 "J11" H 1630 3192 50  0000 L CNN
+F 1 "Conn_01x02" H 1630 3101 50  0000 L CNN
+F 2 "micro:motor_pad" H 1550 3200 50  0001 C CNN
+F 3 "~" H 1550 3200 50  0001 C CNN
+	1    1550 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1350 2900 0    50   Input ~ 0
+MotorR_Foward_Out
+Text GLabel 1350 3000 0    50   Input ~ 0
+MotorR_Reverce_Out
+Text GLabel 1350 3200 0    50   Input ~ 0
+MotorL_Foward_Out
+Text GLabel 1350 3300 0    50   Input ~ 0
+MotorL_Reverce_Out
+$Comp
+L Device:R R?
+U 1 1 5E8AD0AA
+P 7850 5550
+AR Path="/5E9237A4/5E8AD0AA" Ref="R?"  Part="1" 
+AR Path="/5E8AD0AA" Ref="R31"  Part="1" 
+F 0 "R31" H 7700 5700 50  0000 L CNN
+F 1 "10k" H 7700 5400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7780 5550 50  0001 C CNN
+F 3 "~" H 7850 5550 50  0001 C CNN
+	1    7850 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E8AD0B0
+P 8150 5550
+AR Path="/5E9237A4/5E8AD0B0" Ref="R?"  Part="1" 
+AR Path="/5E8AD0B0" Ref="R33"  Part="1" 
+F 0 "R33" H 8000 5700 50  0000 L CNN
+F 1 "10k" H 8000 5400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8080 5550 50  0001 C CNN
+F 3 "~" H 8150 5550 50  0001 C CNN
+	1    8150 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E8C01C2
+P 8000 5550
+AR Path="/5E9237A4/5E8C01C2" Ref="R?"  Part="1" 
+AR Path="/5E8C01C2" Ref="R32"  Part="1" 
+F 0 "R32" H 7850 5700 50  0000 L CNN
+F 1 "10k" H 7850 5400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7930 5550 50  0001 C CNN
+F 3 "~" H 8000 5550 50  0001 C CNN
+	1    8000 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E8C01C8
+P 8300 5550
+AR Path="/5E9237A4/5E8C01C8" Ref="R?"  Part="1" 
+AR Path="/5E8C01C8" Ref="R34"  Part="1" 
+F 0 "R34" H 8150 5700 50  0000 L CNN
+F 1 "10k" H 8150 5400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8230 5550 50  0001 C CNN
+F 3 "~" H 8300 5550 50  0001 C CNN
+	1    8300 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 5050
+Wire Wire Line
+	7850 5050 8000 5050
+Connection ~ 8150 5050
+Wire Wire Line
+	8000 5050 8150 5050
+Connection ~ 8300 5050
+Wire Wire Line
+	8300 5050 9600 5050
+Wire Wire Line
+	8150 5050 8300 5050
+Connection ~ 8000 5900
+Wire Wire Line
+	8000 5900 8800 5900
+Wire Wire Line
+	7600 5900 8000 5900
+Connection ~ 8150 6000
+Wire Wire Line
+	8150 6000 8800 6000
+Wire Wire Line
+	7600 6000 8150 6000
+Connection ~ 8300 6350
+Wire Wire Line
+	8300 6350 9950 6350
+Wire Wire Line
+	7600 6350 8300 6350
+Wire Wire Line
+	7850 5700 7850 5800
+Wire Wire Line
+	8000 5700 8000 5900
+Wire Wire Line
+	8150 5700 8150 6000
+Wire Wire Line
+	8300 5700 8300 6350
+Wire Wire Line
+	7850 5050 7850 5400
+Wire Wire Line
+	8000 5050 8000 5400
+Wire Wire Line
+	8150 5050 8150 5400
+Wire Wire Line
+	8300 5050 8300 5400
 $EndSCHEMATC
