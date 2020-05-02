@@ -66,7 +66,7 @@ F 3 "~" H 10400 5300 50  0001 C CNN
 $EndComp
 Connection ~ 9600 5050
 Wire Wire Line
-	9600 5050 9600 5200
+	9600 5050 9600 5150
 NoConn ~ 9900 5500
 Wire Wire Line
 	9900 5600 10750 5600
@@ -1189,8 +1189,6 @@ Wire Wire Line
 Wire Wire Line
 	10550 5300 10750 5300
 Wire Wire Line
-	10150 5050 10150 5300
-Wire Wire Line
 	9600 5050 10000 5050
 Wire Wire Line
 	9950 5800 9950 6350
@@ -1573,9 +1571,6 @@ Wire Wire Line
 Connection ~ 10000 5900
 Wire Wire Line
 	10000 5900 10050 5900
-Connection ~ 10000 5050
-Wire Wire Line
-	10000 5050 10150 5050
 Text GLabel 5500 5100 3    50   Input ~ 0
 battery_wt
 Text GLabel 5050 4100 0    50   Input ~ 0
@@ -2208,4 +2203,11 @@ Text GLabel 5050 4700 0    50   Input ~ 0
 MotorL_Foward
 Text GLabel 5050 4600 0    50   Input ~ 0
 MotorL_Reverce
+Wire Wire Line
+	9600 5150 10150 5150
+Wire Wire Line
+	10150 5150 10150 5300
+Connection ~ 9600 5150
+Wire Wire Line
+	9600 5150 9600 5200
 $EndSCHEMATC

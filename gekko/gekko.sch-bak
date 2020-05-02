@@ -234,10 +234,6 @@ Text GLabel 6100 3200 1    50   Input ~ 0
 MotorR_Reverce
 Text GLabel 6000 3200 1    50   Input ~ 0
 MotorR_Foward
-Text GLabel 5050 4700 0    50   Input ~ 0
-MotorL_Reverce
-Text GLabel 5050 4600 0    50   Input ~ 0
-MotorL_Foward
 Text GLabel 4650 7100 0    50   Input ~ 0
 sens_RR
 Text GLabel 3450 7100 0    50   Input ~ 0
@@ -2208,4 +2204,8 @@ Wire Wire Line
 Connection ~ 1700 2550
 Wire Wire Line
 	1700 2550 1800 2550
+Text GLabel 5050 4700 0    50   Input ~ 0
+MotorL_Foward
+Text GLabel 5050 4600 0    50   Input ~ 0
+MotorL_Reverce
 $EndSCHEMATC
