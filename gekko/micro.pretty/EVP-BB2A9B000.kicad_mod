@@ -1,4 +1,4 @@
-(module EVP-BB2A9B000 (layer F.Cu) (tedit 5DB7F8C9)
+(module EVP-BB2A9B000 (layer F.Cu) (tedit 5EAD01E1)
   (fp_text reference REF** (at 1.975 1.95) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.1)))
   )
@@ -11,22 +11,22 @@
   (fp_line (start 0.1 -0.3) (end 0.1 -0.475) (layer F.SilkS) (width 0.1))
   (fp_line (start 0.1 -0.475) (end 2.525 -0.475) (layer F.SilkS) (width 0.1))
   (fp_line (start 2.525 -0.475) (end 2.525 -0.3) (layer F.SilkS) (width 0.1))
-  (pad 1 smd custom (at 0 0) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask)
+  (pad 1 smd custom (at 0 0) (size 0.8 0.45) (layers F.Cu F.Paste F.Mask)
     (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
     ))
-  (pad 2 smd custom (at 2.65 0) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask)
+  (pad 2 smd custom (at 2.65 0) (size 0.8 0.45) (layers F.Cu F.Paste F.Mask)
     (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
     ))
-  (pad 3 smd custom (at 0 0.75) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask)
+  (pad 3 smd custom (at 0 0.75) (size 0.8 0.45) (layers F.Cu F.Paste F.Mask)
     (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives
     ))
-  (pad 4 smd custom (at 2.65 0.75) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask)
+  (pad 4 smd custom (at 2.65 0.75) (size 0.8 0.45) (layers F.Cu F.Paste F.Mask)
     (zone_connect 0)
     (options (clearance outline) (anchor rect))
     (primitives

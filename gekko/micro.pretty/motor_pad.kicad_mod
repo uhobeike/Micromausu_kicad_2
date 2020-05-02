@@ -1,4 +1,4 @@
-(module motor_pad (layer F.Cu) (tedit 5E894A8E)
+(module motor_pad (layer F.Cu) (tedit 5EAD2332)
   (fp_text reference REF** (at -0.03 -1.77) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
@@ -6,5 +6,5 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (pad 1 thru_hole circle (at -1 0) (size 1.5 1.5) (drill 0.5) (layers *.Cu *.Mask))
-  (pad 2 thru_hole circle (at 1 0) (size 1.5 1.5) (drill 0.5) (layers *.Cu *.Mask))
+  (pad 2 thru_hole circle (at 1.5 0) (size 1.5 1.5) (drill 0.5) (layers *.Cu *.Mask))
 )

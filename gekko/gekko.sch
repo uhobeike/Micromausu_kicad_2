@@ -146,7 +146,7 @@ MISO_IMU
 Wire Wire Line
 	1600 2350 1600 2550
 Wire Wire Line
-	1600 2550 1800 2550
+	1600 2550 1700 2550
 Wire Wire Line
 	1800 2350 1800 2550
 $Comp
@@ -234,10 +234,6 @@ Text GLabel 6100 3200 1    50   Input ~ 0
 MotorR_Reverce
 Text GLabel 6000 3200 1    50   Input ~ 0
 MotorR_Foward
-Text GLabel 5050 4600 0    50   Input ~ 0
-MotorL_Reverce
-Text GLabel 5050 4700 0    50   Input ~ 0
-MotorL_Foward
 Text GLabel 4650 7100 0    50   Input ~ 0
 sens_RR
 Text GLabel 3450 7100 0    50   Input ~ 0
@@ -666,17 +662,6 @@ Wire Wire Line
 	2400 1900 2400 2250
 Wire Wire Line
 	2250 2050 2250 2400
-$Comp
-L gekko-rescue:Q_NMOS_GDS-Device Q5
-U 1 1 5E4C63DC
-P 5850 7250
-F 0 "Q5" H 6055 7296 50  0000 L CNN
-F 1 "IRLML6344TRPBFTR" H 6000 7000 50  0000 L CNN
-F 2 "micro:IRFML8244TRPBF" H 6050 7350 50  0001 C CNN
-F 3 "~" H 5850 7250 50  0001 C CNN
-	1    5850 7250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	6150 7250 6100 7250
 Connection ~ 6100 7250
@@ -1580,10 +1565,6 @@ Wire Wire Line
 	4950 6950 4950 7350
 Wire Wire Line
 	4950 7350 5400 7350
-Wire Wire Line
-	5400 7350 5400 7050
-Wire Wire Line
-	5400 7050 5750 7050
 Connection ~ 4950 7350
 Wire Wire Line
 	3550 5850 3550 5800
@@ -1791,8 +1772,6 @@ Wire Wire Line
 	1800 1000 1800 1250
 Text GLabel 5700 3200 1    50   Input ~ 0
 battery_sw_CE
-Text GLabel 5500 6300 0    50   Input ~ 0
-BATT_SW
 $Comp
 L Device:D_TVS D4
 U 1 1 5E866709
@@ -2203,4 +2182,30 @@ Wire Wire Line
 	10400 1100 10750 1100
 Wire Wire Line
 	10400 2050 10850 2050
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5EA620E0
+P 5850 7250
+F 0 "Q1" H 6055 7204 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 6055 7295 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6050 7350 50  0001 C CNN
+F 3 "~" H 5850 7250 50  0001 C CNN
+	1    5850 7250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6950 5750 6950
+Wire Wire Line
+	5750 6950 5750 7050
+Wire Wire Line
+	5400 6950 5400 7350
+Wire Wire Line
+	1700 2350 1700 2550
+Connection ~ 1700 2550
+Wire Wire Line
+	1700 2550 1800 2550
+Text GLabel 5050 4700 0    50   Input ~ 0
+MotorL_Foward
+Text GLabel 5050 4600 0    50   Input ~ 0
+MotorL_Reverce
 $EndSCHEMATC
