@@ -2210,4 +2210,18 @@ Wire Wire Line
 Connection ~ 9600 5150
 Wire Wire Line
 	9600 5150 9600 5200
+$Comp
+L gekko-rescue:+3.3V-power #PWR?
+U 1 1 5EC37E5C
+P 7100 5200
+F 0 "#PWR?" H 7100 5050 50  0001 C CNN
+F 1 "+3.3V" H 7115 5373 50  0000 C CNN
+F 2 "" H 7100 5200 50  0001 C CNN
+F 3 "" H 7100 5200 50  0001 C CNN
+	1    7100 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5200 7100 5200
+Connection ~ 6650 5200
 $EndSCHEMATC
